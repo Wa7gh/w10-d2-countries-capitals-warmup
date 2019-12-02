@@ -100,3 +100,43 @@ countries =[
     name: "United States",
     capital: "Washington D.C."
 }]
+
+
+puts "Welcome to Ruby Game! what's you name "
+
+
+input = ""
+while input != "no" do
+
+    for user in countries.shuffle do
+   
+        puts  " what the capital city of  #{user[:name]}"
+        user_anser = gets.chomp.to_s
+        if user_anser == user[:capital]
+            puts "yay"
+    
+        else puts "no"
+        end
+    end
+
+  puts "do you want to play agine? (yes/no)" 
+
+  input = gets.chomp
+end
+
+
+
+
+
+
+
+
+
+# should be for loop inside for loop , get user input comper anser with capital city if == put yay of != puts no 
+
+#puts "What the capital city of " {:name}
+
+# names = ["Ebere","Yassir","Ahmad", "Atheer", "Mike", "Sami" , "Alanoud" ]
+# names.length.times{ |i| puts "hello #{i} = #{names[i]}"}
+
+
